@@ -157,7 +157,7 @@ header a:hover{
   }
   
   .buscar input {
-    width: 0;
+    width: 240;
     height: 40px;
     padding: 0 20px;
     font-size: 18px;
@@ -209,7 +209,7 @@ header a:hover{
 .titulo{
     text-align: center;
     font-weight: bold;
-    color:aliceblue;
+    color:rgb(34, 35, 36);
     
 }
 
@@ -250,7 +250,9 @@ header a:hover{
 }
 
 #marcas{
-    background-color:#000;
+    background-color:rgb(235, 235, 235);
+    background-size: 80%;
+    
 }
 
 
