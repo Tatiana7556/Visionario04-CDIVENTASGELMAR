@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
 	*{
 		margin: 0;
 		padding: 0;
@@ -18,105 +18,108 @@
 		z-index: -1;
 		top: 0;left: 0;
 	}
-	/*Estilos para el encabezado*/
-	.header{
-		width: 100%;
-		height: 100px;
-		position: fixed;
-		top: 0;left: 0;
-	}
-	.container{
-		width: 90%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.container .btn-menu, .logo{
-		float: left;
-		line-height:100px;
-	}
-	.container .btn-menu label{
-		color: #fff;
-		font-size: 25px;
-		cursor: pointer;
-	}
-	.logo h1{
-		color: #fff;
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	}
-	.container .menu{
-		float: right;
-		line-height: 100px;
-	}
-	.container .menu a{
-		display: inline-block;
-		padding: 15px;
-		line-height: normal;
-		text-decoration: none;
-		color: #fff;
-		transition: all 0.3s ease;
-		border-bottom: 2px solid transparent;
-		font-size: 15px;
-		margin-right: 5px;
-	}
-	.container .menu a:hover{
-		border-bottom: 2px solid #c7c7c7;
-		padding-bottom: 5px;
-	}
-	/*Fin de Estilos para el encabezado*/
 
 	/*Menù lateral*/
-	#btn-menu{
-		display: none;
+	.barra {
+		font-family: 'Lato', sans-serif;
+		/**Alto y ancho de donde se va a activar cuando pase el mouse**/
+		width:10%;
+		height:9%;
+		/*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+		position:fixed;
+		/*Tiempo en el que va a transitar la animacion*/
+		transition: .4s all ;
+		/*este arriba de todo en la pantalla*/
+		z-index: 1;  
 	}
-	.container-menu{
-		position: absolute;
-		background: rgba(0,0,0,0.5);
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
+	
+	.barra ul{
+		/*solucionar espacios no deseados*/
+		padding:0px;
+		text-align: center;
+			
 	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
+	.barra  li{
+		/*Velocidad de transicion del contenido*/
+		transition:all .4s;
+		list-style: none; 
 	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #1c1c1c;
-		height: 100vh;
-		position: relative;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
+	
+	.barra a{
 		text-decoration: none;
-		padding: 20px;
-		color: #c7c7c7;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
+		
+		font-weight: normal;
+		
+		/*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+		transition: .3s all ;
+		/*Se ocultan los elementos*/
+		font-size: 0px;
+		padding:0px;
 	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #c7c7c7;
-		background: #1f1f1f;
+	
+	.barra  h2{
+		text-align: center;
+		color:white;
+		padding:7px;
+		padding-bottom:7px;
+	
+		/*Se oculta el h2*/
+		font-size:0px;   
 	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #fff;
-		cursor: pointer;
-		font-size: 18px;
+	
+	.barra img{
+		padding-top: 30px;
+		padding-left: 10px;
+	}
+	
+	.barra:hover{
+		/*Tamaño cuando el cursor señale la barra*/
+		width: 70%;
+		height: 100vh;
+		
+		/*Color*/
+		background: rgba(5, 33, 51, 0.98);
+	}
+	.barra:hover h2{
+		/*posicion dentro de barra del h2*/
+		padding:15px;
+		font-size: 35px;
+	}
+	.barra:hover a{ 
+		font-size:20px ;
+		color:white;
+		/*Se usa el display block para que el enlace respete el margin*/
+		display: block;
+		padding:20px;
+	}
+	.barra:hover img{
+		/*Desaparecer la imagen*/
+		height:0px;
+	}
+	
+	
+	.barra:hover li{
+		border-top:1px solid #03121b;
+		/*Espacios entre las lineas y el contenido*/
+		
+		width:100%;
+			
+	}
+	.barra:hover ul:last-of-type{
+	
+	
+		border-bottom: 1px solid #03121b;
+	}
+	
+	.barra:hover a:hover{ 
+		font-size: 25px;
+		padding: 30px 0px; 
+		background: rgba(23, 78, 112, 0.98);  
+	}
+	
+	@media (min-width: 768px){
+		.barra:hover{
+		width: 45%;
+		}
 	}
 	/*Fin de Menù lateral*/

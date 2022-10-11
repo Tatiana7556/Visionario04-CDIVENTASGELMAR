@@ -233,7 +233,7 @@ body{
     color: rgb(223, 53, 53);
 }
 
-/*Link para volvar al comercio*/
+/*Link para volver al comercio*/
 .volver a{
     text-decoration: none;
     color: #fff;
@@ -251,6 +251,37 @@ body{
     color: #000;
     font-weight: bold;
 }
+
+.boton{
+    width: 250px; height: 50px;
+    background-color:red;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.boton:hover{
+    background-color: gray;
+
+
+}
+
+.boton p{
+    text-align: center;
+    font-size:  1.2em; font-weight: bold;
+    color: white;
+    line-height: 3em;
+}
+
+div{
+    width: 33.33%;
+}
+
+.boton a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
 
 /*Footer*/
 

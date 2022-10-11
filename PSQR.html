@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrodomésticos</title>
+    <link rel="stylesheet" href="/css/pqr.css">
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
@@ -14,30 +15,37 @@
             <nav>
                 <a href="/tatiana.html">Inicio</a>
                 <a href="productos.html">Nuestros Productos</a>
-                <a href="/login.html">Login</a>
+                <a href="/login.html">Iniciar Sesion</a>
             </nav>
         </div>
     </header>
 
-    <form method="post">
-        <fieldset class="formulario">
-            <legend class="PSQR">Formulario PSQR</legend>
-            <div class="celdas">
-                <label for="nombreapellido">Nombre y Apellido</label>
+    <main>
+		<h1>Formulario PQRS</h1>
+		<form>
+			<div class='field'>
+				<label for="nombreapellido">Nombres y Apellidos</label>
                 <input type="text" id="nombreapellido" class="input-padron" required>
-
-                <label for="correoelectronico">Correo Electrónico</label>
+			</div>
+		
+			<div class='field'>
+				<label for="correoelectronico">Correo Electrónico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-            </div>
-            
-
-            <label for="mensaje">Mensaje</label>
+			</div>
+			<div class='field'>
+				<label for="mensaje">Mensaje</label>
             <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-            
-            <label>¿Cómo le gustaría que lo contactemos?</label>
+			</div>
+			<div class='field'>
+				<label>Teléfono</label>
+				<input name='Telefono' type='number' autocomplete />
+			</div>
+			<div class='textBox'>
+				<label>Otros datos</label>
+				<textarea></textarea>
+			</div>
+			<div class='gustos'>
+				<label>¿Cómo le gustaría que lo contactemos?</label>
             <div class="option">
                 <input type="radio" id="email" name="medio_contacto" value="email"/>
                 <label for="email">Email</label><br/>
@@ -49,20 +57,15 @@
                 <label for="whatsapp">WhatsApp</label><br/>
             </div>
             
-            <label for="horario">¿En cuál horario prefiere ser atendido?</label><br/>
-            <select name="horario" id="horario" class="horario">
-                <option value="Mañana" selected="true">Mañana</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noche">Noche</option>
-            </select><br/>
-        <div>
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Electrodomésticos GELMAR?</label>  
-        </div>              
+            <div>
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Electrodomésticos GELMAR?</label>  
+            </div>              
+            
+            <input type="submit" value="Enviar formulario" class="enviar">
         
-        <input type="submit" value="Enviar formulario" class="enviar">
-    </fieldset>
-    </form>
-</section>
+        </form>
+	</main>   
+</body>
 
 <section id="footer">
     <footer>
@@ -71,5 +74,5 @@
 
 </section>
 
-</body>
+
 </html>
