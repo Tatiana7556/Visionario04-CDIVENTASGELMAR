@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevecon Lg 508 lts no frost</title>
     <link rel="stylesheet" href="/css/formulario-compra-producto.css">
+    <script src="Jquery/jquery-1.6.3.min.js">
+
+    $("#actualizar").click(function(e){
+        $("#actualizar.html").fadeIn(1000);
+        return false;
+    })
+
+   
+    </script>
     
 
 </head>
@@ -16,10 +25,11 @@
             <nav>
                 <a href="tatiana.html">Inicio</a>
                 <a href="productos.html">Nuestros Productos</a>
-                <a href="login.html">Iniciar Sesión</a>
+                <a href="">Ayuda</a>
             </nav>
         </div>
     </header>
+
     <section class="title">
         <h3>Producto seleccionado</h3>
     </section>
@@ -38,25 +48,30 @@
 
     <section>
         <div class="contenedor">
-        </div>      
-    </section>
+        
+            <div class="boton">
+                
+                <a href="" id="eliminar"><p>Eliminar Producto</p></a>
+            </div>
+        
 
-    <section>
-        <div class="boton">
-            <a href="">Eliminar Producto</a>
-         </div>
-    </section>
-     
-    <section>
-        <div class="boton">
-            <a href="">Actualizar Producto</a>
-         </div>
-    </section>
+            <div class="boton">
+                
+                <a href="actualizar.html" id="actualizar"><p>Actualizar Producto</p></a>
+            </div>
+
+
+            <div class="boton">
+                 
+                <a href="portafolio.html"> <p>Volver a Portafolio</p> </a>
+            </div>
+
+        </div>
     
-    <div class="volver">
-        <a href="/productos.html">Volver a los productos</a>
-    </div>
+       
 
+    </section>
+      
    
     
 </body>

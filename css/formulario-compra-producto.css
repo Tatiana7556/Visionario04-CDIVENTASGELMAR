@@ -252,18 +252,29 @@ body{
     font-weight: bold;
 }
 
-/*botones de elminiar y actualizar */
-.boton a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background-color: rgb(223, 53, 53);
-    padding: 10px;
-    margin-left: 150px;
+.boton{
+    width: 250px; height: 50px;
+    background-color:red;
+    border-radius: .5em;
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    transition: background-color 1s;
+}
+
+.boton:hover{
+    background-color: gray;
+
+
+}
+
+.boton p{
+    text-align: center;
+    font-size:  1.2em; font-weight: bold;
+    color: white;
+    line-height: 3em;
+}
+
+div{
+    width: 33.33%;
 }
 
 .boton a:hover {
