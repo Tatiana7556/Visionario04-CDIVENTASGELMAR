@@ -3,6 +3,7 @@
 }
 h1{
     font-size: 3.5em;
+    align-items: center;
 }
 h2{
     font-size: 2.7em;
@@ -115,7 +116,8 @@ header a:hover{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 100%;  
+    width: 100%; 
+     
 }
 
 
@@ -138,14 +140,14 @@ header a:hover{
 
 #lista .elec{
     width: 260px;
-    margin: 9px;
+    margin: 10px;
 }
 
 #lista img{
     width: 192px;
 }
 #lista li:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(250, 250, 250);
 }
 
 .buscar {
@@ -155,7 +157,7 @@ header a:hover{
   }
   
   .buscar input {
-    width: 0;
+    width: 240;
     height: 40px;
     padding: 0 20px;
     font-size: 18px;
@@ -163,7 +165,7 @@ header a:hover{
     outline: none;
     border: 1px solid silver;
     border-radius: 30px;
-    transition: all 0.6s ease;
+    
   }
   
   .btn {
@@ -178,7 +180,7 @@ header a:hover{
     color: white;
     font-size: 18px;
     border-radius: 50%;
-    cursor: pointer;
+   
   }
   
   .buscar:hover input {
@@ -207,7 +209,8 @@ header a:hover{
 .titulo{
     text-align: center;
     font-weight: bold;
-    color: #4d4d4d;
+    color:rgb(34, 35, 36);
+    
 }
 
 .container2{
@@ -218,6 +221,7 @@ header a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 
@@ -240,7 +244,15 @@ header a:hover{
 
 .container2 .card img{
     width: 200px;
+    height: 67px;
     border-bottom: 2.5px solid rgb(235, 235, 235);
+    border-radius: 8px;
+}
+
+#marcas{
+    background-color:rgb(235, 235, 235);
+    background-size: 80%;
+    
 }
 
 

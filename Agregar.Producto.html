@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Producto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="tatiana.html">Inicio</a>
+                <a href="productos.html">Nuestros Productos</a>
+                <a href="">Ayuda</a>
+                <a href="administrador.html">Menu</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="form-register">
+        <h1>Ingresar Nuevo Producto</h1>
+        <input class="botons" type="submit" value="Agregar Imagen">
+
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre del Producto">
+        <input class="controls" type="text" name="descripcion" id="descripcion" placeholder="Descripcion del Producto">
+        <span class="marca">
+        <form method="post">
+        <select name="marca" id="marca">
+            <option placeholder="marca del Producto"></option>
+            <option value="LG">LG</option>
+            <option value="Mabe">MABE</option>
+            <option value="Challenger">CHALLENGER</option>
+            <option value="Abba">ABBA</option>
+            <option value="Whirlpool">WHIRPOOL</option>
+        </select>
+
+        <span class="categoria">
+            <form method="post">
+            <select name="categoria" id="categoria">
+                <option placeholder="Categoria Del Producto"></option>
+                <option value="televisores">TELEVISORES</option>
+                <option value="electrodomesticos">ELECTRODOMESTICOS</option>
+                <option value="equipos de sonido">EQUIPOS DE SONIDO</option>
+            </select>
+        
+        <input class="controls" type="text" name="precio" id="precio" placeholder="Precio del Producto">
+        <input class="botons" type="submit" value="Agregar Producto">
+      </section>
+</body>
+</html>
