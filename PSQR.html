@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrodomésticos</title>
     <link rel="stylesheet" href="/css/pqr.css">
-    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
+<section>   
     <header>
         <div class="container">
             <p class="logo">Electrodomésticos GELMAR</p>
@@ -19,7 +19,9 @@
             </nav>
         </div>
     </header>
+</section>
 
+<section class="form">
     <form method="post">
         <fieldset class="formulario">
             <legend class="PSQR">Formulario PQRS</legend>
@@ -40,14 +42,19 @@
             
             <label>¿Cómo le gustaría que lo contactemos?</label>
             <div class="option">
-                <input type="radio" id="email" name="medio_contacto" value="email"/>
-                <label for="email">Email</label><br/>
-
-                <input type="radio" id="celular" name="medio_contacto" value="teléfono"/>
-                <label for="celular">Teléfono</label><br/>
-
-                <input type="radio" id="whatsapp" name="medio_contacto" value="whatsapp"/>
-                <label for="whatsapp">WhatsApp</label><br/>
+                <div class="circulo">
+                    <input type="radio" id="email" name="medio_contacto" value="email"/>
+                    <label for="email">Email</label><br/>
+                </div>
+                <div class="circulo">
+                    <input type="radio" id="celular" name="medio_contacto" value="teléfono"/>
+                    <label for="celular">Teléfono</label><br/>
+                </div>
+               <div class="circulo">
+                    <input type="radio" id="whatsapp" name="medio_contacto" value="whatsapp"/>
+                    <label for="whatsapp">WhatsApp</label><br/>
+               </div>
+                
             </div>
             
             <label for="horario">¿En cuál horario prefiere ser atendido?</label><br/>
@@ -56,12 +63,12 @@
                 <option value="Tarde">Tarde</option>
                 <option value="Noche">Noche</option>
             </select><br/>
-        <div>
+            <div>
             <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Electrodomésticos GELMAR?</label>  
-        </div>              
+            </div>              
         
-        <input type="submit" value="Enviar formulario" class="enviar">
-    </fieldset>
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </fieldset>
     </form>
 </section>
 

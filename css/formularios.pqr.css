@@ -6,7 +6,6 @@
     transition: background-color 1s;
     justify-content: center;
     
-
 }
 
 .boton p{
@@ -33,13 +32,7 @@
 
 }
 
-.celdas{
-    width: 450px;
-    border-radius: .5em;
-    float:none;
-    text-align: center;
-   
-}
+
 
 .label{
     text-align: center;
@@ -48,60 +41,19 @@
 .contenedor{
     height: 10em;
     
-
-
 }
 .contenedor1{
     float:left;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     height: 400px;
     width: 350px;
     border: 0.2em solid black;
     border-radius: 2em;
-    padding: .2em;
-    position: relative;
-    top: 30px;
-    left: 90px;
-    
+     
 }
 
-.contenedor2{
-    float:left;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-start;
-    height: 400px;
-    width: 350px;
-    border: 0.2em solid black;
-    border-radius: 2em;
-    padding: .2em;
-    position: relative;
-    top: 30px;
-    left: 150px;
-    
-    
-}
 
-.contenedor3{
-    float:left;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-start;
-    height: 400px;
-    width: 350px;
-    border: 0.2em solid black;
-    border-radius: 2em;
-    padding: .2em;
-    position: relative;
-    top: 30px;
-    left: 200px;
-    
-}
