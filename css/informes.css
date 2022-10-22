@@ -12,7 +12,7 @@ h3{
     font-size: 2em;
 }
 p{
-    font-size: 1.25em;
+    font-size: 1.0em;
 }
 .color-acento{
     color: rgb(223, 53, 53);
@@ -97,6 +97,25 @@ header a:hover{
 
 }
 
+.boton1{
+    width: 170px; height: 40px;
+    background-color:rgb(212, 32, 32);
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 1s;
+    align-items: center;
+
+}
+
+.boton1 p{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+    align-items: center;
+
+}
+
 #main-container{
     margin: 150px auto;
     width: 600px;
@@ -112,6 +131,7 @@ table{
 
 th, td{
     padding: 20px;
+    text-align: center;
     
 }
 
@@ -119,6 +139,7 @@ thead{
     background-color: rgb(212, 32, 32);
     color: white;
     border-bottom: solid 5px black;
+    text-align: center;
     
 }
 
@@ -130,5 +151,3 @@ tr:hover td{
     background-color: rgb(226, 98, 98);
     color: white;
 }
-
-

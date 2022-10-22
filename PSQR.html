@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/pqr.css">
 </head>
 <body>
-<section>   
+    <section>   
     <header>
         <div class="container">
             <p class="logo">Electrodomésticos GELMAR</p>
@@ -19,64 +19,30 @@
             </nav>
         </div>
     </header>
-</section>
+    </section>
 
-<section class="form">
-    <form method="post">
-        <fieldset class="formulario">
-            <legend class="PSQR">Formulario PQRS</legend>
-            <div class="celdas">
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
+    <form action="">
+        <h2>PQR</h2>
+        <h3>Preguntas,Quejas y Reclamos</h3>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <input type="text" name="Correo" placeholder="Correo">
+        <input type="text" name="Telefono" placeholder="Telefono">
+        <textarea name="Mensaje"  placeholder="Escriba Su Mensaje"></textarea>
+        <input type="button" value="ENVIAR" id="boton">
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-            </div>
-            
-
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-            
-            <label>¿Cómo le gustaría que lo contactemos?</label>
-            <div class="option">
-                <div class="circulo">
-                    <input type="radio" id="email" name="medio_contacto" value="email"/>
-                    <label for="email">Email</label><br/>
-                </div>
-                <div class="circulo">
-                    <input type="radio" id="celular" name="medio_contacto" value="teléfono"/>
-                    <label for="celular">Teléfono</label><br/>
-                </div>
-               <div class="circulo">
-                    <input type="radio" id="whatsapp" name="medio_contacto" value="whatsapp"/>
-                    <label for="whatsapp">WhatsApp</label><br/>
-               </div>
-                
-            </div>
-            
-            <label for="horario">¿En cuál horario prefiere ser atendido?</label><br/>
-            <select name="horario" id="horario" class="horario">
-                <option value="Mañana" selected="true">Mañana</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noche">Noche</option>
-            </select><br/>
-            <div>
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Electrodomésticos GELMAR?</label>  
-            </div>              
-        
-            <input type="submit" value="Enviar formulario" class="enviar">
-        </fieldset>
     </form>
-</section>
+
+    <br>
 
     <section id="footer">
         <footer>
             <p>&copy;GelmarElectrodomesticos 2022</p>
         </footer>    
-    
+
     </section>
+
+
+
+    
 </body>
 </html>

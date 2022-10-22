@@ -99,7 +99,7 @@ header a:hover{
 
 #main-container{
     margin: 150px auto;
-    width: 600px;
+    width: 900px;
 
 }
 
@@ -130,5 +130,3 @@ tr:hover td{
     background-color: rgb(226, 98, 98);
     color: white;
 }
-
-
