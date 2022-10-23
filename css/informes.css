@@ -12,7 +12,7 @@ h3{
     font-size: 2em;
 }
 p{
-    font-size: 1.25em;
+    font-size: 1.0em;
 }
 .color-acento{
     color: rgb(223, 53, 53);
@@ -29,10 +29,7 @@ body{
     height: 100%;
     letter-spacing: 0.03em;
 }
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
+
 header{
     background-color: rgb(245, 245, 245);
 }
@@ -42,11 +39,7 @@ header .logo{
     font-weight: bold;
     color: rgba(223, 53, 53);
 }
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 header nav{
     display: flex;
@@ -70,10 +63,7 @@ header a:hover{
         width: 100%;
     }
 
-    header .container{
-        flex-direction:row;
-        justify-content: space-between;
-    }
+   
     header nav{
         flex-direction: row;
         padding-bottom: 0;
@@ -97,38 +87,41 @@ header a:hover{
 
 }
 
-#main-container{
-    margin: 150px auto;
-    width: 600px;
+.container1{
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
 
 }
 
-table{
-    background-color: white;
-    text-align: left;
-    width: 100%;
-    border-collapse: collapse;
+.flex{
+    display: flex;
+}
+.columna{
+    background: rgb(228,228,228);
+    color: black;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;
+    width: 450px;
+
 }
 
-th, td{
-    padding: 20px;
-    
+.text-center{
+    text-align: center;
 }
 
-thead{
-    background-color: rgb(212, 32, 32);
-    color: white;
-    border-bottom: solid 5px black;
-    
+.btn-informe{
+    background: rgb(223, 53, 53);
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
-tr:nth-child(even){
-    background-color: rgba(224, 212, 212, 0.856) ;
+.btn-informe:hover{
+    background: rgb(212, 32, 32);
 }
-
-tr:hover td{
-    background-color: rgb(226, 98, 98);
-    color: white;
-}
-
-
