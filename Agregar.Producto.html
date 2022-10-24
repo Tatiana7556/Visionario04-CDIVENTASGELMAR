@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevo Producto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/agregarproducto.css">
 </head>
 <body>
 
@@ -21,34 +21,50 @@
         </div>
     </header>
 
-    <section class="form-register">
-        <h1>Ingresar Nuevo Producto</h1>
-        <input class="botons" type="submit" value="Agregar Imagen">
+      <h1>Ingresar Nuevo Producto</h1>
+      <section class="form-register">
+        <div class="container">
+            <div class="cargarimg">
+                <img src="/agregar imagen/add imagen.png" alt="">
+                <input class="botons" type="submit" value="Agregar Imagen">
+            </div>
 
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre del Producto">
-        <input class="controls" type="text" name="descripcion" id="descripcion" placeholder="Descripcion del Producto">
-        <span class="marca">
-        <form method="post">
-        <select name="marca" id="marca">
-            <option placeholder="marca del Producto"></option>
-            <option value="LG">LG</option>
-            <option value="Mabe">MABE</option>
-            <option value="Challenger">CHALLENGER</option>
-            <option value="Abba">ABBA</option>
-            <option value="Whirlpool">WHIRPOOL</option>
-        </select>
+            <label for="direccion">Nombre del producto:</label><br/>
+            <input class="controls" type="text" name="nombre_del_producto" id="direccion" placeholder="Ingrese nombre del producto">
 
-        <span class="categoria">
+            <label for="telefono">Descripción:</label><br/>
+            <input class="controls" type="text" name="descripcion" id="descripcion" placeholder="Descripcion del Producto">
+            <form class="opciones" method="post">
+                <label for="">Seleccione la marca:</label><br/>
+                <select name="marca" id="marca">
+                    <option placeholder="marca del Producto"></option>
+                    <option value="LG">LG</option>
+                    <option value="Mabe">MABE</option>
+                    <option value="Challenger">CHALLENGER</option>
+                    <option value="Abba">ABBA</option>
+                    <option value="Whirlpool">WHIRPOOL</option>
+                </select><br/>
+            
             <form method="post">
-            <select name="categoria" id="categoria">
-                <option placeholder="Categoria Del Producto"></option>
-                <option value="televisores">TELEVISORES</option>
-                <option value="electrodomesticos">ELECTRODOMESTICOS</option>
-                <option value="equipos de sonido">EQUIPOS DE SONIDO</option>
-            </select>
-        
-        <input class="controls" type="text" name="precio" id="precio" placeholder="Precio del Producto">
-        <input class="botons" type="submit" value="Agregar Producto">
+                <label for="">Seleccione la categoria:</label><br/>
+                <select name="categoria" id="categoria">
+                    <option placeholder="Categoria Del Producto"></option>
+                    <option value="televisores">TELEVISORES</option>
+                    <option value="electrodomesticos">ELECTRODOMESTICOS</option>
+                    <option value="equipos de sonido">EQUIPOS DE SONIDO</option>
+                </select>
+
+                <input class="controls" type="text" name="precio" id="precio" placeholder="Precio del Producto">
+            <div>
+                <input class="botons" type="submit" value="Agregar Producto">
+            </div>
+        </div>
       </section>
+
+      <section id="footer">
+        <footer>
+            <p>&copy;Gelmar Electrodomésticos 2022</p>
+        </footer>    
+    </section>
 </body>
 </html>
