@@ -467,5 +467,40 @@ footer p{
 }
 
 
+/*Agregar producto*/
+.agregar input{
+    background-color: rgb(223, 53, 53);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 4px 12px #000;
+    margin-bottom: 18px;
+    margin-left: 40px;
+}
 
+.agregar input:hover{
+    font-weight: bold;
+    transition: 0.2s;
+}
 
+/*Actuallizar producto*/
+.actualizar input{
+    background-color: rgb(223, 53, 53);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 4px 12px #000;
+    margin-bottom: 18px;
+    margin-left: 40px;
+}
+
+.actualizar input:hover{
+    font-weight: bold;
+    transition: 0.2s;
+}

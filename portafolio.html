@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Productos</title>
     <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="css/portafolio.css">
     <script src="https://kit.fontawesome.com/712575d4a5.js"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="producto-seleccionado.html">
@@ -25,61 +24,30 @@
         </div>
     </header>
     
-    <section id="catalogo">
-            <h2>Portafolio De Productos</h2>
-            
-                <ul id="lista">
-                    <li>
-                        <a href="/Televisores.html"> 
-                            <img src="/Productos/Televisor LG 50.jpeg" alt='Televisores' title="celulares" class="telv"/>
-                        </a>
-                        <form action="Televisores.html">
-                            <input type="submit" value="Televisores">
-                        </form>
-                    </li>
-        
-                    <li>
-                        <a href="Electrodomesticos.html"> 
-                            <img src="/Productos/electrodomesticos.jpg" alt='electrodomesticos' class="elec"/>
-                        </a>
-                        <form action="Electrodomesticos.html">
-                            <input type="submit" value="Electrodomésticos">
-                        </form>
-                    </li>
-
-                    <li>
-                        <a href="EquipoSonido.html"> 
-                            <img src="/Productos/Equipo LG.png" alt='electrodomesticos' class="elec"/>
-                        </a>
-                        <form action="EquipoSonido.html">
-                            <input type="submit" value="Equipo De Sonido">
-                        </form>
-                    </li>
-                </ul>
-                <section class="busca-container">
-    
-                    <div class="buscar">
-                        <input type="text" placeholder="Buscar" required />
-                        <div class="btn">
-                          <i class="fas fa-search icon"></i>
-      
-                        </div>
-                  
-                    </div>
-                </section>
-    </section>
-    
     <section>
         <h1 class="title">Todos los productos</h1>
+        <div class="agregar">
+            <form action="/Agregar.Producto.html">
+                <input type="submit" value="Agregar Producto">
+            </form>
+        </div>
+
+        <div class="actualizar">
+            <form action="/actualizar.html">
+                <input type="submit" value="Actualizar Producto">
+            </form>
+        </div>
+
         <div class="contenedor">
             <div class="card">
-                <a href="/producto-seleccionado.html">
+                <a href="/Lavadora Lg19kg 42 libras color.html">
                     <img src="/Productos/Lavadora Lg19kg 42 libras color gris.png">
                 </a>
                 <h4><a href="/Lavadora Lg19kg 42 libras color.html">Lavadora Lg 19kg 42 libras color gris</a></h4>
-                <form action="/Lavadora Lg19kg 42 libras color.html" id="producto-seleccionado.html">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Lavadora Lg19kg 42 libras color.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -89,10 +57,10 @@
                     <img src="/Productos/Televisor LG 50.png">
                 </a>
                 <h4><a href="/Televisor LG 50.html">Televisor LG 50</a></h4>
-
-                <form action="/Televisor LG 50.html" id="producto-seleccionado">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Televisor LG 50.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -102,9 +70,10 @@
                     <img src="/Productos/Nevera Challenger 317 lts no frost.png">
                 </a>
                 <h4><a href="/Nevera Challenger 317 lts no frost.html">Nevera Challenger 317 lts no frost</a></h4>
-                <form action="/Nevera Challenger 317 lts no frost.html" id="producto-seleccionado">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Nevera Challenger 317 lts no frost.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -114,9 +83,10 @@
                     <img src="/Productos/Televisor LG 32.png">
                 </a>
                 <h4><a href="/Televisor LG 32.html">Televisor LG 32</a></h4>
-                <form action="/Televisor LG 32.html" id="producto-seleccionado">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Televisor LG 32.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -126,9 +96,10 @@
                     <img src="/Productos/Nevecon Lg 508 lts no frost.png">
                 </a>
                 <h4><a href="/Nevecon Lg 508 lts no frost.html">Nevecon Lg 508 lts no frost</a></h4>
-                <form action="/Nevecon Lg 508 lts no frost.html" id="producto-seleccionado">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Nevecon Lg 508 lts no frost.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -138,9 +109,10 @@
                     <img src="/Productos/Lavadora Mabe 16kg 35 libras color gris.png">
                 </a>
                 <h4><a href="/Lavadora Mabe 16kg 35 libras color gris.html">Lavadora Mabe 16kg 35 libras color gris</a></h4>
-                <form action="/Lavadora Mabe 16kg 35 libras color gris.html" id="">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Lavadora Mabe 16kg 35 libras color gris.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -150,9 +122,10 @@
                     <img src="/Productos/Estufa MABE 51 cm.png">
                 </a>
                 <h4><a href="/Estufa mabe 51cm.html">Estufa MABE 51 cm</a></h4>
-                <form action="/Estufa mabe 51cm.html" id="">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Estufa mabe 51cm.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -161,22 +134,11 @@
                 <a href="/Estufa 51cm.html">
                     <img src="/Productos/Estufa 51 cm.png">
                 </a>
-                <h4><a href="/Estufa 51cm.html">Estufa Abba 51 cm</a></h4>
-                <form action="/Estufa 51cm.html" id="">
+                <h4><a href="/Estufa 51cm.html">Estufa 51 cm</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Estufa 51cm.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
-                    </div>
-                </form>
-            </div>
-
-            <div class="card">
-                <a href="/NeveraWhirlpool.html">
-                    <img src="/Productos/">
-                </a>
-                <h4><a href="/NeveraWhirlpool.html">Nevera Whirlpool Top Mount 393 L Inoxidable</a></h4>
-                <form action="/NeveraWhirlpool.html" id="">
-                    <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
@@ -186,15 +148,308 @@
                     <img src="/Productos/Equipo LG.png">
                 </a>
                 <h4><a href="/Equipo LG.html">Equipo LG</a></h4>
-                <form action="/Equipo LG.html" id="">
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/Equipo LG.html" id="comprar-producto">
                     <div>
-                        <label class="buy" for="comprar"><input type="submit" value="Ver Producto"></label>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Mabe RMP410FZCC.html">
+                    <img src="/Productos/Nevera Mabe RMP410FZCC.png">
+                </a>
+                <h4><a href="/Nevera Mabe RMP410FZCC.html">Nevera Mabe RMP410FZCC</a></h4>
+                <p><samp class="precio">Precio: $2.250.000</samp></p>
+                <form action="/Nevera Mabe RMP410FZCC.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Mabe RMP405FYCU.html">
+                    <img src="/Productos/Nevera Mabe RMP405FYCU.png">
+                </a>
+                <h4><a href="/Nevera Mabe RMP405FYCU.html">Nevera Mabe RMP405FYCU</a></h4>
+                <p><samp class="precio">Precio: $ 1.920.000</samp></p>
+                <form action="/Nevera Mabe RMP405FYCU.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Mabe RMU210NACG1.html">
+                    <img src="/Productos/Nevera Mabe RMU210NACG1.png">
+                </a>
+                <h4><a href="/Nevera Mabe RMU210NACG1.html">Nevera Mabe RMU210NACG1</a></h4>
+                <p><samp class="precio">Precio: $1.089.000</samp></p>
+                <form action="/Nevera Mabe RMU210NACG1.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Mabe RMB520IBBQX0.html">
+                    <img src="/Productos/Nevera Mabe RMB520IBBQX0.png">
+                </a>
+                <h4><a href="/Nevera Mabe RMB520IBBQX0.html">Nevera Mabe RMB520IBBQX0</a></h4>
+                <p><samp class="precio">Precio: $3.700.000</samp></p>
+                <form action="/Nevera Mabe RMB520IBBQX0.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Mabe RMS510IBBQX0 INOX.html">
+                    <img src="/Productos/Nevera Mabe RMS510IBBQX0 INOX.png">
+                </a>
+                <h4><a href="/Nevera Mabe RMS510IBBQX0 INOX.html">Nevera Mabe RMS510IBBQX0 INOX</a></h4>
+                <p><samp class="precio">Precio: $3.600.000</samp></p>
+                <form action="/Nevera Mabe RMS510IBBQX0 INOX.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Whirlpool WRW45AKTWW.html">
+                    <img src="/Productos/Nevera Whirlpool WRW45AKTWW.png">
+                </a>
+                <h4><a href="/Nevera Whirlpool WRW45AKTWW.html">Nevera Whirlpool WRW45AKTWW</a></h4>
+                <p><samp class="precio">Precio: $2.400.000</samp></p>
+                <form action="/Nevera Whirlpool WRW45AKTWW.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Whirlpool WRW32CKTWW.html">
+                    <img src="/Productos/Nevera Whirlpool WRW32CKTWW.png">
+                </a>
+                <h4><a href="/Nevera Whirlpool WRW32CKTWW.html">Nevera Whirlpool WRW32CKTWW</a></h4>
+                <p><samp class="precio">Precio: $1.700.000</samp></p>
+                <form action="/Nevera Whirlpool WRW32CKTWW.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevera Whirlpool WRJ43AKTWW.html">
+                    <img src="/Productos/Nevera Whirlpool WRJ43AKTWW.png">
+                </a>
+                <h4><a href="/Nevera Whirlpool WRJ43AKTWW.html">Nevera Whirlpool WRJ43AKTWW</a></h4>
+                <p><samp class="precio">Precio: $1.900.000</samp></p>
+                <form action="/Nevera Whirlpool WRJ43AKTWW.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Nevecon Whirlpool 7WCS25SDHM.html">
+                    <img src="/Productos/Nevecon Whirlpool 7WCS25SDHM.png">
+                </a>
+                <h4><a href="/Nevecon Whirlpool 7WCS25SDHM.html">Nevecon Whirlpool 7WCS25SDHM</a></h4>
+                <p><samp class="precio">Precio: $4.510.000</samp></p>
+                <form action="/Nevecon Whirlpool 7WCS25SDHM.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Parlante LG RN9.html">
+                    <img src="/Productos/Parlante LG RN9.png">
+                </a>
+                <h4><a href="/Parlante LG RN9.html">Parlante LG RN9</a></h4>
+                <p><samp class="precio">Precio: $1.650.000</samp></p>
+                <form action="/Parlante LG RN9.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Parlante LG RN7.html">
+                    <img src="/Productos/Parlante LG RN7.png">
+                </a>
+                <h4><a href="/Parlante LG RN7.html">Parlante LG RN7</a></h4>
+                <p><samp class="precio">Precio: $1.300.000</samp></p>
+                <form action="/Parlante LG RN7.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Parlante LG RN5.html">
+                    <img src="/Productos/Parlante LG RN5.png">
+                </a>
+                <h4><a href="/Parlante LG RN5.html">Parlante LG RN5</a></h4>
+                <p><samp class="precio">Precio: $900.000</samp></p>
+                <form action="/Parlante LG RN5.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora secadora LG WD14VVC4S6.html">
+                    <img src="/Productos/Lavadora secadora LG WD14VVC4S6.png">
+                </a>
+                <h4><a href="/Lavadora secadora LG WD14VVC4S6.html">Lavadora secadora LG WD14VVC4S6</a></h4>
+                <p><samp class="precio">Precio: $3.250.000</samp></p>
+                <form action="/Lavadora secadora LG WD14VVC4S6.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora secadora LG WD14BVC2S6 NEGRO.html">
+                    <img src="/Productos/Lavadora secadora LG WD14BVC2S6 NEGRO.png">
+                </a>
+                <h4><a href="/Lavadora secadora LG WD14BVC2S6 NEGRO.html">Lavadora secadora LG WD14BVC2S6 NEGRO</a></h4>
+                <p><samp class="precio">Precio: $3.320.000</samp></p>
+                <form action="/Lavadora secadora LG WD14BVC2S6 NEGRO.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora secadora LG WD22VV2S6BO.html">
+                    <img src="/Productos/Lavadora secadora LG WD22VV2S6B.png">
+                </a>
+                <h4><a href="/Lavadora secadora LG WD22VV2S6BO.html">Lavadora secadora LG WD22VV2S6BO</a></h4>
+                <p><samp class="precio">Precio: $4.487.000</samp></p>
+                <form action="/Lavadora secadora LG WD22VV2S6BO.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora secadora LG WD22BVC2S6B.html">
+                    <img src="/Productos/Lavadora secadora LG WD22BVC2S6B.png">
+                </a>
+                <h4><a href="/Lavadora secadora LG WD22BVC2S6B.html">Lavadora secadora LG WD22BVC2S6B</a></h4>
+                <p><samp class="precio">Precio: $4.587.000</samp></p>
+                <form action="/Lavadora secadora LG WD22BVC2S6B.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora secadora LG WD16EG2S6.html">
+                    <img src="/Productos/Lavadora secadora LG WD16EG2S6.png">
+                </a>
+                <h4><a href="/Lavadora secadora LG WD16EG2S6.html">Lavadora secadora LG WD16EG2S6</a></h4>
+                <p><samp class="precio">Precio: $3.800.000</samp></p>
+                <form action="/Lavadora secadora LG WD16EG2S6.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora LG WT13DSBP.html">
+                    <img src="/Productos/Lavadora LG WT13DSBP.png">
+                </a>
+                <h4><a href="/Lavadora LG WT13DSBP.html">Lavadora LG WT13DSBP</a></h4>
+                <p><samp class="precio">Precio: $1.775.000</samp></p>
+                <form action="/Lavadora LG WT13DSBP.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora LG WT19BSB.html">
+                    <img src="/Productos/Lavadora LG WT19BSB.png">
+                </a>
+                <h4><a href="/Lavadora LG WT19BSB.html">Lavadora LG WT19BSB</a></h4>
+                <p><samp class="precio">Precio: $2.150.000</samp></p>
+                <form action="/Lavadora LG WT19BSB.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora LG WT19DPB.html">
+                    <img src="/Productos/Lavadora LG WT19DPB.png">
+                </a>
+                <h4><a href="/Lavadora LG WT19DPB.html">Lavadora LG WT19DPB</a></h4>
+                <p><samp class="precio">Precio: $2.000.000</samp></p>
+                <form action="/Lavadora LG WT19DPB.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Lavadora LG carga frontal WM22VV2S6BR.html">
+                    <img src="/Productos/Lavadora LG carga frontal WM22VV2S6BR.png">
+                </a>
+                <h4><a href="/Lavadora LG carga frontal WM22VV2S6BR.html">Lavadora LG carga frontal WM22VV2S6BR</a></h4>
+                <p><samp class="precio">Precio: $3.930.000 </samp></p>
+                <form action="/Lavadora LG carga frontal WM22VV2S6BR.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <a href="/Secadora LG DF22VV2R.html">
+                    <img src="/Productos/Secadora LG DF22VV2R.png">
+                </a>
+                <h4><a href="/Secadora LG DF22VV2R.html">Secadora LG DF22VV2R</a></h4>
+                <p><samp class="precio">Precio: $3.200.000</samp></p>
+                <form action="/Secadora LG DF22VV2R.html" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
+    <section id="footer">
+        <footer>
+            <p>&copy;GelmarElectrodomesticos 2022</p>
+        </footer>    
+
+    </section>
 
 </body>
 </html>
