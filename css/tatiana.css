@@ -164,7 +164,7 @@ header a:hover{
 
 #image2{
     flex: 0 0 auto;
-    width: 400px;
+    width: 500px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
@@ -448,7 +448,7 @@ footer p{
     }
      
     
-    #img1{
+    #image1{
         border-radius: 10%;
         width: 350px;
         height: 250px;
@@ -458,9 +458,15 @@ footer p{
         flex-wrap: wrap
     }
         
-    #img2{
-        flex: 0 0 auto;
-         width: calc(100%-400px);
+    #image2{
+        border-radius: 10%;
+        width: 350px;
+        height: 250px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap
+        
     }
 
     #nuestros-productos{
